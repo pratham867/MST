@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft - Contact - +91 9999-9999</title>
+  <meta name="description" content="Contact us and make a quote by email orcamento@bikcraft.com or by phone +91 9999-9999">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bikcraft - Contato - 11 9999-9999"/>
+  <meta property="og:description" content="Entre em contato conosco e faça um orçamento pelo email orcamento@bikcraft.com ou pelo número +55 11 9999-9999"/>
+  <meta property="og:url" content="http://devmagno.github.io/bikcraft/contact.html"/>
+  <meta property="og:image" content="http://devmagno.github.io/bikcraft/img/og-image.png"/>
+  <meta property="og:site_name" content="Bikcraft"/>
+
+  <script src="https://kit.fontawesome.com/77daa57238.js" crossorigin="anonymous"></script>
+
+  <meta name="theme-color" content="#FEC63E">
+
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.convform.css">
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.convform.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! Are you intrested in Handcrafted Cycles" name="category">
+        <option value="Yes">Yes?</option>
+        <option value="No">No?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Yes">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your Favourite type of Bicycle">
+	  <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>	    
+        </div>
+        <div data-conv-case="No" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Thank you for visiting our website"> 
+        </div>
+      </div>
+
+  	</form>
+	</div>
+</div>
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="grid-2">
+        <img src="../img/bikcraft.svg" alt="Bikcraft">
+      </a>
+      <nav class="header_menu grid-14">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="menu_active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="internal-intro internal-contact">
+    <div class="container">
+      <h1 data-anime="400" class="fadeInDown">Contact</h1>
+      <p data-anime="800" class="fadeInDown">Ask questions with us</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <form id="form_orcamento" class="contact_form grid-8 fadeInLeft formphp" data-anime="1000" method="POST" action="enviar-sendgrid.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <label for="tel">Telephone</label>
+        <input type="tel" id="tel" name="tel" required>
+        <label for="leaveBlank1" class="hidden">If you are not a robot, leave it blank</label>
+        <input type="text" id="leaveBlank1" name="leaveBlank1" class="hidden">
+        <label for="leaveBlank2" class="hidden">If you are not a robot, do not change this field</label>
+        <input type="text" id="leaveBlank2" name="leaveBlank2" class="hidden" value="http://">
+        <label for="msg">Message</label>
+        <textarea id="msg" cols="30" rows="5" name="msg" required></textarea>
+        <button type="submit" class="btn" id="send" name="send">Submit</button>
+      </form>
+      <div class="contact_data grid-8 fadeInLeft" data-anime="1100">
+        <h3>Data</h3>
+        <span>+91 9999-9999</span>
+        <span>budget@bikcraft.com</span>
+        <span>Cannaught Place - Delhi</span>
+        <span>DELHI - ND - INDIA</span>
+        <h3>Social Networks</h3>
+        <ul>
+          <li data-anime="1300" class="fadeInUp"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li data-anime="1400" class="fadeInUp"><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li data-anime="1500" class="fadeInUp"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container map-photo fadeInUp" data-anime="1600">
+    <a href="https://www.google.com.br/maps" target="_blank" class="grid-16">
+      <img src="../img/Capture.jpg.PNG" alt="Endereço da Bikcraft">
+    </a>
+  </section>
+
+  <section class="break">
+    <blockquote class="external-quote container">
+    <p>"The real secret of happiness lies in having a genuine interest in all the details of everyday life."</p>
+    <cite>William Morris</cite>
+    </blockquote>
+  </section>
+  <footer>
+    <div class="footer-black">
+      <div class="container">
+        <div class="grid-8 footer_history">
+          <h3>Our Story</h3>
+          <p>
+            When we started Bikcraft we just wanted a product that we would love to use. We were passionate about cycling and also doing things with our own hands. So a dream arose in the garage of our house.
+          </p>
+        </div>
+
+        <div class="grid-4 footer_contact">
+          <h3>Contato</h3>
+          <ul>
+            <li>- +91 9999-9999</li>
+            <li>- contact@bikcraft.com</li>
+            <li>- Delhi, INDIA</li>
+          </ul>
+        </div>
+
+        <div class="grid-4 footer_social">
+          <h3>Social Networks</h3>
+          <ul>
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p class="grid-16 copy-text">Bikcraft 2021 - Some rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/simple-anime.js"></script>
+  <script src="../js/simple-form.js"></script>
+  <script src="../js/script.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180193644-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180193644-1');
+  </script>
+</body>
+</html>

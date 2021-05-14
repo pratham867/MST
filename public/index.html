@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft - Custom Bicycles</title>
+  <meta name="description" content="Buy your custom bike at Bikcraft. We have Ride, Retro and Sport models.">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bikcraft - Custom Bicycles"/>
+  <meta property="og:description" content="Buy your custom bike at Bikcraft. We have Ride, Retro and Sport models."/>
+  <meta property="og:url" content="http://devmagno.github.io/bikcraft"/>
+  <meta property="og:image" content="http://devmagno.github.io/bikcraft/img/og-image.png"/>
+  <meta property="og:site_name" content="Bikcraft"/>
+
+  <script src="https://kit.fontawesome.com/77daa57238.js" crossorigin="anonymous"></script>
+
+  <meta name="theme-color" content="#FEC63E">
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+  </head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! Are you intrested in Handcrafted Cycles" name="category">
+        <option value="Yes">Yes?</option>
+        <option value="No">No?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Yes">
+	  <select data-conv-question="Please, tell me your Favourite type of Bicycle" name="bycycles">
+        <option value="retro">Retro type</option>
+        <option value="sport">Sports type</option>
+	<option value="tour">Tour type</option>
+	<option value="other">Other type</option>
+      </select>
+
+	<div data-conv-fork="bycycles">
+        <div data-conv-case="other">
+		<input type="text" name="companyName" data-conv-question="We are not taking orders of any other type for now.Thank you for visiting our website"> 
+ 	</div>
+	 <div data-conv-case="retro">
+		 <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+
+      <select data-conv-question="Please Confirm" name="confirm">
+        <option value="Yes">Confirm</option>
+      </select>	   
+      <div data-conv-fork="confirm">
+        <div data-conv-case="Yes">
+          <input type="text" data-conv-question="It's a pleasure to meet you. We will contact you soon" data-no-answer="true">
+        </div>
+          </div>
+	</div>
+ <div data-conv-case="sport">
+		 <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm" name="confirm">
+        <option value="Yes">Confirm</option>
+      </select>	   
+      <div data-conv-fork="confirm">
+        <div data-conv-case="Yes">
+          <input type="text" data-conv-question="It's a pleasure to meet you. We will contact you soon" data-no-answer="true">
+        </div>
+          </div>
+	</div>
+ <div data-conv-case="tour">
+		 <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm" name="confirm">
+        <option value="Yes">Confirm</option>
+      </select>	   
+      <div data-conv-fork="confirm">
+        <div data-conv-case="Yes">
+          <input type="text" data-conv-question="It's a pleasure to meet you. We will contact you soon" data-no-answer="true">
+        </div>
+          </div> 
+	</div>
+      	</div>	    
+      </div>
+        <div data-conv-case="No" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Thank you for visiting our website"> 
+        </div>
+      </div>
+
+  	</form>
+	</div>
+</div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="grid-2">
+        <img src="img/bikcraft.svg" alt="Bikcraft">
+      </a>
+      <nav class="header_menu grid-14">
+        <ul>
+          <li><a href="views/about.html">About</a></li>
+          <li><a href="views/products.html">Products</a></li>
+          <li><a href="views/portfolio.html">Portfolio</a></li>
+          <li><a href="views/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <h1 data-anime="400" class="fadeInDown">Handmade Bicycles</h1>
+      <blockquote data-anime="800" class="external-quote fadeInDown">
+      <p>"Do not have anything in your home that you do not find useful or believe to be beautiful."</p>
+      <cite>William Morris</cite>
+      </blockquote>
+      <div data-anime="900" class="fadeInUp">
+        <a href="views/products.html" class="btn">Budget</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="products container">
+    <h2 class="subtitle fadeInDown" data-anime="1600">Products</h2>
+    <ul class="products_list">
+      <li class="grid-1-3 fadeInUp" data-anime="1800">
+        <div class="products_list_icon">
+          <img src="img/produtos/passeio.svg" alt="Touring Bicycles">
+        </div>
+        <h3>Tour</h3>
+        <p>
+          Much better than walking along the edge in closed glass.
+        </p>
+      </li>
+      <li class="grid-1-3 fadeInUp" data-anime="2000">
+        <div class="products_list_icon">
+          <img src="img/produtos/esporte.svg" alt="Sports bikes">
+        </div>
+        <h3>Sport</h3>
+        <p>
+          Faster than Forrest Gump, no one will catch you.
+        </p>
+      </li>
+      <li class="grid-1-3 fadeInUp" data-anime="2200">
+        <div class="products_list_icon">
+          <img src="img/produtos/retro.svg" alt="Retro Bicycles">
+        </div>
+        <h3>Retro</h3>
+        <p>
+          The past comes back to remember what we should do in the future.
+        </p>
+      </li>
+    </ul>
+    <div class="call fadeInDown" data-anime="2300">
+      <p>Click here and see the details of the products</p>
+      <a href="views/products.html" class="btn">Products</a>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2 class="subtitle fadeInDown" data-anime="2000">Portfolio</h2>
+    <div class="container" data-slide="portfolio">
+      <ul class="portfolio_items">
+        <li class="grid-8">
+          <img src="img/portfolio/retro.jpg" alt="Bicycle in retro style">
+        </li>
+        <li class="grid-8">
+          <img src="img/portfolio/passeio.jpg" alt="Touring bike">
+        </li>
+        <li class="grid-16">
+          <img src="img/portfolio/esporte.jpg" alt="Sports Bicycle">
+        </li>
+      </ul>
+      <ul class="portfolio_items">
+        <li class="grid-8">
+          <img src="img/portfolio/passeio.jpg" alt="Touring bike">
+        </li>
+        <li class="grid-8">
+          <img src="img/portfolio/retro.jpg" alt="Bicycle in retro style">
+        </li>
+        <li class="grid-16">
+          <img src="img/portfolio/esporte.jpg" alt="Sports Bicycle">
+        </li>
+      </ul>
+    </div>
+    <div class="call fadeInDown" data-anime="2300">
+      <p>Learn more about our portfolio</p>
+      <a href="views/portfolio.html" class="btn">Portfolio</a>
+    </div>
+  </section>
+
+  <section class="container quality">
+    <h2 class="subtitle fadeInDown" data-anime="2000">Quality</h2>
+    <img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
+    <ul class="quality_list">
+      <li class="grid-1-3">
+        <h3>Durability</h3>
+        <p>Solid as stone, light as wind and resistant as diamond, are our differentials.</p>
+      </li>
+      <li class="grid-1-3">
+        <h3>Design</h3>
+        <p>Tailored for the best comfort and efficiency. We adapt your Bikcraft to your body.</p>
+      </li>
+      <li class="grid-1-3">
+        <h3>Sustainability</h3>
+        <p>In addition to helping to take care of the environment, taking cars off the street, all production is sustainable.</p>
+      </li>
+    </ul>
+    <div class="call fadeInDown" data-anime="2300">
+      <p>Learn more about our history</p>
+      <a href="views/about.html" class="btn">About</a>
+    </div>
+  </section>
+
+  <section class="break">
+      <blockquote class="external-quote container">
+      <p>"The real secret of happiness lies in having a genuine interest in all the details of everyday life."</p>
+      <cite>William Morris</cite>
+      </blockquote>
+  </section>
+
+  <footer>
+    <div class="footer-black">
+      <div class="container">
+        <div class="grid-8 footer_history">
+          <h3>Our story</h3>
+          <p>
+            When we started Bikcraft we just wanted a product that we would love to use. We were passionate about cycling and also doing things with our own hands. So a dream arose in the garage of our house.
+          </p>
+        </div>
+
+        <div class="grid-4 footer_contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>- +91 9999-9999</li>
+            <li>- contact@bikcraft.com</li>
+            <li>- Delhi, INDIA</li>
+          </ul>
+        </div>
+
+        <div class="grid-4 footer_social">
+          <h3>Social networks</h3>
+          <ul>
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p class="grid-16 copy-text">Bikcraft 2021 - Some rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/simple-slide.js"></script>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180193644-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180193644-1');
+  </script>
+
+</body>
+</html>
